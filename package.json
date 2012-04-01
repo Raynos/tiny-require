@@ -2,7 +2,11 @@
     "name": "tiny-require",
     "version": "0.0.1",
     "description": "Package your commonJS modules for browsers",
-    "keywords": ["core", "architecture", "infrastructure"],
+    "keywords": [
+        "browser", "require", "commonjs", "bundle", "compiler", "analyzer", 
+        "javascript", "cli", "npm", "browserify",  "build", "builder", "tiny",
+        "generator", "deploy", "make", "modules", "package", "packager", "web", 
+    ],
     "author": "Raynos <raynos2@gmail.com>",
     "main": "index",
     "dependencies": {

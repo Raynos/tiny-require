@@ -60,7 +60,7 @@ Compiles to
 
 ## <a name="motivation" href="#motivation">Motivation</a>
 
- - [module8][5]
+ - [modul8][5]
  - [browserify][6]
  - [webmake][7]
 
