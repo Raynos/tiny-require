@@ -1,0 +1,22 @@
+{
+    "name": "tiny-require",
+    "version": "0.0.1",
+    "description": "Package your commonJS modules for browsers",
+    "keywords": ["core", "architecture", "infrastructure"],
+    "author": "Raynos <raynos2@gmail.com>",
+    "main": "index",
+    "dependencies": {
+    },
+    "engines": {
+        "node": "0.6.x"
+    },
+    "scripts": {
+        "test": "make test" 
+    },
+    "devDependencies": {
+        "mocha": "1.0"
+    },
+    "bin": { 
+        "tiny-require": "./bin/require" 
+    }
+}
