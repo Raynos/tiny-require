@@ -30,19 +30,19 @@ Package your commonJS modules for browsers
 Compiles to
 
     (function () {
-        var c={}
+        var c={} // var cache = {}
 
-        function r(t) {
-            return c[t]
+        function r(t) { // function require(token) {
+            return c[t] // return cache[token]
         }
 
-        function d(t,c,m) {
-            m={}
-            c(r, m)
-            c[t] = m.exports
+        function d(t,f,m) { // function define(token, func, module) {
+            m={} // module = {}
+            f(r, m) // func(require, module)
+            c[t] = m.exports // cache[token] = module.exports
         }
 
-        d("b", function (require, module) {
+        d("b", function (require, module) { // define("./o", ...
             module.exports = {
                 doIt: function () {
                     console.log("you did it")
@@ -50,8 +50,8 @@ Compiles to
             }
         })
 
-        d("a", function (require, module) {
-            var o = require("b")
+        d("a", function (require, module) { // define("./entry", ...
+            var o = require("b") // var o = require("./o")
             o.doIt()
         })
     }())
