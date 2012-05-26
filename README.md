@@ -36,10 +36,10 @@ Compiles to
             return c[t]
         }
 
-        function d(t,c,m) {
+        function d(t,f,m) {
             m={}
-            c(r, m)
-            c[t] = m.exports
+            f(r,m)
+            c[t]=m.exports
         }
 
         d("b", function (require, module) {
